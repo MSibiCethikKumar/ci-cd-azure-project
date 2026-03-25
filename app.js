@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Route
 app.get('/', (req, res) => {
-    res.send('Hello, this is my CI/CD Azure Project 🚀');
+    res.send('Live Demo Running 🚀');
 });
 
 // Start server
