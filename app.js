@@ -1,15 +1,16 @@
 const express = require('express');
 const app = express();
 
-// Port (Azure will use this later)
 const PORT = process.env.PORT || 3000;
 
-// Route
 app.get('/', (req, res) => {
-    res.send('hi this is my second report');
+    res.send(`
+        <h1>🚀 CI/CD Project</h1>
+        <p>Working successfully!</p>
+        <p>Time: ${new Date().toLocaleString()}</p>
+    `);
 });
 
-// Start server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log("Server running on port " + PORT);
 });
